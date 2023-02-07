@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import PlayerInputComponent from './PlayerInput'
 
 const MatchPlay = () => {
@@ -10,12 +11,14 @@ const MatchPlay = () => {
   const [ joueur4, setJoueur4] = useState('')
 
   const submit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log('joueur1', joueur1)
     console.log('joueur2', joueur2)
     console.log('joueur3', joueur3)
     console.log('joueur4', joueur4)
-
+    if(<PlayerInputComponent />) {
+      console.log('Ok')
+    }
     
   }
 

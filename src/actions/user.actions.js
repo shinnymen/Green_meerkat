@@ -1,6 +1,7 @@
 import axios from "axios";
 
-import config from '../config'
+import config from "../config";
+import { GET_USERS } from "./users.actions";
 
 export const GET_USER = "GET_USER";
 export const UPLOAD_PICTURE = "UPLOAD_PICTURE";
@@ -83,6 +84,23 @@ export const unfollowUser = (followerId, idToUnFollow) => {
         dispatch({
           type: UNFOLLOW_USER,
           payload: { idToUnFollow },
+        });
+      })
+      .catch((err) => console.log(err));
+  };
+};
+
+export const inviteUserToPlay = (userId) => {
+  return (dispatch) => {
+    return axios({
+      method: "post",
+      url: `${config.backend.host}api/user/` + userId,
+      data: { userId },
+    })
+      .then((res) => {
+        dispatch({
+          type: GET_USERS,
+          payload: { userId },
         });
       })
       .catch((err) => console.log(err));

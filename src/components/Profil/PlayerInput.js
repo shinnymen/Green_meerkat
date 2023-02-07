@@ -29,7 +29,7 @@ const PlayerInputComponent = ({ playerLabel, onChange, searchForUsers }) => {
         <input
           ref={(ref) => (inputRef = ref)}
           type="search"
-          id="{playerLabel}"
+          id={playerLabel}
           autocomplete="off"
           onFocus={focusOnInput}
           onBlur={blurOnInput}

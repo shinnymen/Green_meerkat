@@ -15,7 +15,7 @@ const FriendsHint = () => {
   useEffect(() => {
     const notFriendList = () => {
       let array = [];
-      usersData.map((user) => {
+      usersData.map((user) =>  {
         if (user._id !== userData._id && !user.followers.includes(userData._id))
           return array.push(user._id);
       });
