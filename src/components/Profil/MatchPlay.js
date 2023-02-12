@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import PlayerInputComponent from './PlayerInput'
 
 const MatchPlay = () => {
-  const [ rdv, setRdv] = useState('')
-  const [ lieu, setLieu] = useState('')
+  // const [ rdv, setRdv] = useState('')
+  // const [ lieu, setLieu] = useState('')
   const [ joueur1, setJoueur1] = useState('')
   const [ joueur2, setJoueur2] = useState('')
   const [ joueur3, setJoueur3] = useState('')

@@ -1,0 +1,27 @@
+{
+  "short_name": "GM",
+  "name": "Green Meerkat",
+  "icons": [
+    {
+      "src": "./img/icons/icon.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./img/icons/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "white",
+  "orientation": "portrait-primary",
+  "background_color": "white"
+}
