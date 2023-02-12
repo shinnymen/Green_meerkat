@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import cookie from "js-cookie";
+
 import config from '../../config'
 
 const Logout = () => {
